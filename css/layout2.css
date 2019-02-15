@@ -38,14 +38,17 @@ body {
   .wrapper {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-areas: 
-    "header header header header"
-    " . . . . "
-    " . . . . "
-    ". body body ."
-    ". navbox navbox ."
-    "footer footer footer footer";
+    "header header header"
+    " . . . "
+    " . . . "
+    ". sidebar . " 
+    " . . . "
+    ". body ."
+    ". navbox ."
+    ". social ."
+    "footer footer footer";
   }
   
   
@@ -59,34 +62,14 @@ body {
   
   .body {
     background-color: #fff;
-    color: #a5a5af;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-.body__header--1,
-.body__header--2,
-.body__header--3 {
-  color: #015249;
-}
-
-  .body__img {
-    height: auto;
-    width: auto;
-    max-width: 40rem;
-    max-height: 40rem;
-    border-radius: 1rem;
-    margin: 2rem;
-
+    color: #015249;
   }
   
   .body__text {
     font-size: 1rem;
     text-align: center;
-    color: #a5a5af;    
+    color: #a5a5af;
+    
   }
   
   .body__title {
@@ -94,7 +77,6 @@ body {
     text-align: center;
     margin: 0%;
     height: 100%;
-    color: #015249;
   }
   
   .footer {
@@ -195,6 +177,54 @@ body {
   li {
     list-style-type: none;
     text-align: center;
+  }
+  
+  .social img {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+    width: 50px;
+  }
+  
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 360px;
+    align-self: center;
+    justify-self: center;
+  
+  }
+  .social ul {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  
+  .logos__item--1,
+  .logos__item--2,
+  .logos__item--3 {
+    height: 65.99;
+    width: 65.99px;
+    padding: .4rem;
+    margin: .5rem;
+    background-color: #015249;
+    border-radius: 360px;
+  }
+
+  .logos__item--1:hover,
+  .logos__item--2:hover,
+  .logos__item--3:hover {
+    background-color: #77c9d4;
+  }
+
+  .logos__item--2 img {
+    border-radius: 360px;
   }
 
   
