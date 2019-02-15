@@ -38,17 +38,14 @@ body {
   .wrapper {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-template-areas: 
-    "header header header"
-    " . . . "
-    " . . . "
-    ". sidebar . " 
-    " . . . "
-    ". body ."
-    ". navbox ."
-    ". social ."
-    "footer footer footer";
+    "header header header header"
+    " . . . . "
+    " . . . . "
+    ". body body ."
+    ". navbox navbox ."
+    "footer footer footer footer";
   }
   
   
@@ -62,14 +59,31 @@ body {
   
   .body {
     background-color: #fff;
-    color: #015249;
+    color: #a5a5af;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.body__header--1,
+.body__header--2,
+.body__header--3 {
+  color: #015249;
+}
+
+  .body__img {
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 1rem;
+
   }
   
   .body__text {
     font-size: 1rem;
     text-align: center;
-    color: #a5a5af;
-    
+    color: #a5a5af;    
   }
   
   .body__title {
@@ -77,6 +91,7 @@ body {
     text-align: center;
     margin: 0%;
     height: 100%;
+    color: #015249;
   }
   
   .footer {
