@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nate Fritz</title>
 
-    <link rel="stylesheet" href="./css/layout2.css">
+    <link rel="stylesheet" href="./css/layout.css">
 </head>
 
 <body>
@@ -17,22 +17,26 @@
 </html>
 
 <div class="wrapper">
-    <div class="box body">
+    <header class="box header">
+        <img class="header__img" src="./media/heroimage.jpg">
+    </header>
+
+    <main class="box body">
         <h1 class="body__title">Nate Fritz</h1>
-        <p class="body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat, praesentium nam aspernatur fuga minima id cum eos optio quos nisi beatae sequi vero explicabo tempora quas assumenda? Eaque, nemo.</p>
+        <h2 class="body__aboutme">About Me</h2>
+        <p class="body__text">I am a full stack developer that currently resides in Hilliard, OH, with my wife and daughter.  I have a passion for new tech, art, and learning.  To learn a little bit more about me, go ahead and click below.</p>
 
-    </div>
-    <div class="box sidebar">
-        <img class="sidebar_img" src="./media/Headshot3.png" alt="Headshot of Nate">
-    </div>
-    <!--box sidebar-->
-    <div class="box navbox">
+    </main>
+    <section class="box headshot">
+        <img class="headshot_img"
+            src="./media/Headshot3.png">
+    </section>
+    <nav class="box navbox">
         <a href="./portfolio.html"><ul class="navbox__button__container">
-            <li class="navbox__button--1">Projects</li>
+            <li class="navbox__button--1">Learn More</li>
         </ul></a>
-    </div>
-    <div class="box social">
-
+    </nav>
+    <nav class="box social">
         <ul>
             <div class="logos">
                 <div class=logos__item--1><a href="https://github.com/nate-fritz" target="_blank">
@@ -48,10 +52,6 @@
                 </div>
             </div>
         </ul>
-
-    </div>
-    <div class="box header">
-        <img class="header__img" src="./media/heroimage.jpg">
-    </div>
-    <div class="box footer">Nate Fritz © 2019</div>
+    </nav>
+    <footer class="box footer">Nate Fritz © 2019</footer>
 </div>
