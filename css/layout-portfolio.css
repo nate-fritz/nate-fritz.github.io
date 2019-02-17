@@ -44,7 +44,7 @@
     text-decoration: none;
     color: #a5a5af;
   }
-  .body a:hover {
+  .contact__link a:hover {
     background-color: #a5a5a5;
     border-radius: 360px;
     color: #fff;
@@ -53,6 +53,7 @@
   
   article {
     text-align: left;
+    margin-bottom: 1rem;
   }
 
   h2 {
