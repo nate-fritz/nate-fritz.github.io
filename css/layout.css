@@ -200,8 +200,8 @@ li {
   grid-row-end: 5;
   display: flex;
   justify-content: center;
-  max-height: 250px;
-  min-height: 250px;
+  max-height: 320px;
+  min-height: 320px;
   max-width: 200px;
   min-width: 200px;
   z-index: 1;
