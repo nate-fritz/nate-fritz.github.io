@@ -200,6 +200,8 @@ li {
   grid-row-end: 5;
   display: flex;
   justify-content: center;
+  height: auto;
+  width: auto;
   max-height: 320px;
   min-height: 320px;
   max-width: 200px;
