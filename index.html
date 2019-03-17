@@ -2,55 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nate Fritz</title>
-
-    <link rel="stylesheet" href="./css/layout.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nate Fritz</title>
+  <link rel="stylesheet" href="./static/css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
+<main id="myContainer" class="MainContainer">
+  <header>
+    <img class="logo" src="https://i.ibb.co/w4t0gj9/logo-Orange.png">
+    <nav class="menu__dropdown">
+      <button class="menu__toggle"><i class="material-icons md-48">menu</i></button>
+      <ul class="menu__items hide">
+        <li class="menu__item"><a href="./index.html">About Me</a></li>
+        <li class="menu__item"><a href="./portfolio.html">Portfolio</a></li>
+<!--         <li class="menu__item"><a href="#0">Social Media</a></li> -->
+      </ul>
+    </nav>
+  </header>
 
+  <div class="grid__wrapper">
+    <div class="heroimage"></div>
+    <div class="box headshot">
+      <img class="headshot_img" src="https://raw.githubusercontent.com/nate-fritz/nate-fritz.github.io/master/media/headshotnew.png" alt="Headshot photo of Nate Fritz.">
+    </div>
+    <div class="box about__me">
+      <h1 class="about__me__title">Nate Fritz</h1>
+      <p class="about__me__text">I am a full stack developer that currently resides in Hilliard, OH, with my wife and daughter. I have a passion for new tech, art, and learning. To learn a little bit more about me, go ahead and click below.</p>
+  <button id="myBtn" class="learn__more__btn">Learn More</button>
+    </div>     
+          <div class="box social">
+      <ul>
+        <div class="logos">
+          <div class=logos__item--1>
+            <a href="https://github.com/nate-fritz" target="_blank">
+              <li><img src="./static/media/GitHub-Mark-Light-64px.png" alt="GitHub Icon"></li>
+            </a>
+          </div>
+
+          <div class=logos__item--2>
+            <li><a href="http://www.linkedin.com/in/nate-fritz" target="_blank"><img src="./static/media/In-White-48px-R.png" alt="LinkedIn Icon"></li></a>
+          </div>
+
+          <div class=logos__item--3>
+            <a href="mailto:nfritz360@gmail.com" target="_blank">
+              <li><img src="./static/media/email.png" alt="Email Icon"></li>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="heroimage2"></div>
+    <footer class="footer"><a href="mailto:nfritz360@gmail.com">Nate Fritz © 2019</a>
+      <p class="photo__credit">Photo Credit: NASA on Unsplash</p>
+    </footer>
+</div>
+      
+<!-- This HTML is for my Modal only -->
+        </main>
+<div id="myModal" class="modal is-hidden is-visuallyHidden">
+
+<div class="modal-content">
+<span id="closeModal" class="close">&times;</span>
+<h1 class="modal__title">About Me</h1>
+      <section class="about__me">
+            
+            <h2 class="modal__header--1">Contact Info</h2>
+                <ul>
+            <li><span class="contact__label">Phone</span><a class="contact__link" href="tel:6142602484">614.260.2484</a></li>
+            <li><span class="contact__label">Email</span><a class="contact__link2" href="mailto:nfritz360@gmail.com">nfritz360@gmail.com</a></li>
+            <li><span class="contact__label">Home</span><a class="contact__link3" href="https://hilliardohio.gov/">5985 Waterview Dr Hilliard, OH 43026</a></li>
+            </ul>
+            <h2 class="modal__header--1">Skills</h2>
+                <ul>
+                    <li> Java, JavaScript, JSON, AJAX, Spring</li>
+                    <li> HTML5, CSS3, Flexbox, Grid</li>
+                    <li> Object Oriented Programming, Test Driven Development</li>
+                    <li> Relational Databases, SQL, Tableau</li>
+                </ul>
+            <h2 class="modal__header--1">Experience</h2>
+                <h4>Software Development Apprentice - WeCanCodeIT</h4>
+                    <article>
+                        Completed an award winning intensive coding bootcamp, practicing Agile methodology to complete numerous software projects and earning a Certificate of Software Development.  Individual and team projects provided hands on experience in a Scrum enviroment, and showcase proficiency in a variety of in demand software development skills.
+                    </article>
+                <h4>Senior Analyst - Verizon Wireless</h4>
+                <article>
+                    Primarily responsible for analysis and strategy of day to day operations of a call center workforce of 500+ people.
+
+                    Used various internal data sources to build custom reporting for center leadership. Reporting and strategy recommendations directly led to significant increases in objective completion and cost reduction. </article>
+                <h4>Customer Service Supervisor - Verizon Wireless</h4>
+                <article>Provided ongoing management, training, and development for small teams of customer service representatives, with a focus on new hires.</article>
+            </section>
+      <div class="modal-footer">
+ 
+      </div>
+  </div>
+</div>
+<!--    Modal End    -->
+    </div>
+
+
+    <script src="./static/js/app.js"></script>
 </body>
 
 </html>
-
-<div class="wrapper">
-    <header class="box header">
-        <img class="header__img" src="./media/heroimage.jpg">
-    </header>
-
-    <main class="box body">
-        <h1 class="body__title">Nate Fritz</h1>
-        <p class="body__text">I am a full stack developer that currently resides in Hilliard, OH, with my wife and daughter.  I have a passion for new tech, art, and learning.  To learn a little bit more about me, go ahead and click below.</p>
-
-    </main>
-    <section class="box headshot">
-        <img class="headshot_img"
-            src="./media/headshot3.png" alt="Headshot photo of Nate Fritz.">
-    </section>
-    <nav class="box navbox">
-        <a href="./portfolio.html"><ul class="navbox__button__container">
-            <li class="navbox__button--1">Learn More</li>
-        </ul></a>
-    </nav>
-    <nav class="box social">
-        <ul>
-            <div class="logos">
-                <div class=logos__item--1><a href="https://github.com/nate-fritz" target="_blank">
-                    <li><img src="./media/GitHub-Mark-Light-64px.png" alt="GitHub Icon"></li></a>
-                </div>
-            
-                <div class=logos__item--2>
-                    <li><a href="http://www.linkedin.com/in/nate-fritz" target="_blank"><img src="./media/In-White-48px-R.png" alt="LinkedIn Icon"></li></a>
-                </div>
-
-                <div class=logos__item--3><a href="mailto:nfritz360@gmail.com" target="_blank">
-                    <li><img src="./media/email.png" alt="Email Icon"></li></a>
-                </div>
-            </div>
-        </ul>
-    </nav>
-    <footer class="box footer">Nate Fritz © 2019</footer>
-</div>
