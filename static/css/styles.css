@@ -304,7 +304,7 @@ header {
   
   /* Overlay START */
   
-  .Modal {
+  .modal {
     display: block;
     position: fixed;
     left: 0;
@@ -318,7 +318,7 @@ header {
     transition: all 0.3s linear;
   }
   
-  .Modal-content {
+  .modal-content {
     background-color: rgba(16, 23, 39, 0.99);
     box-shadow: 1px 1px 1px black;
     color: white;
@@ -329,7 +329,7 @@ header {
     overflow: scroll;
   }
   
-  .ModalOpen { overflow: hidden; }
+  .modalOpen { overflow: hidden; }
   
   .is-hidden { display: none; }
   
@@ -337,16 +337,16 @@ header {
   
   /* Overlay END */
   
-  /* Modal Close Button START */
+  /* Modal close Button START */
   
-  .Close {
+  .close {
     color: white;
     float: right;
     font-size: 80px;
     position: static;
   }
   
-  .Close:hover, .Close:focus {
+  .close:hover, .close:focus {
     color: #ff611d;
     text-decoration: none;
     cursor: pointer;
@@ -381,7 +381,7 @@ header {
       text-shadow: 1px 1px 1px white;;
     }
   
-  .Modal li, ul {
+  .modal li, ul {
       text-align: left;
       padding: 5px;
     }
