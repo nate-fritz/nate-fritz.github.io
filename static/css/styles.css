@@ -1,0 +1,681 @@
+/* () Header CSS */
+
+header {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(255, 97, 29, 0.7);
+    z-index: 10;
+    box-shadow: inset 1px 1px 1px black, 1px 1px 1px black;
+  }
+  
+  .material-icons.md-48 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .material-icons.md-48:hover {
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .logo {
+    width: 30px;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Drop Down CSS Start  */
+  
+  .menu__toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 6px;
+    outline: none;
+  }
+  
+  .menu__dropdown {
+    position: relative;
+  }
+  
+  .menu__items {
+    align-items: center;
+    background-color: rgba(255, 97, 29, 0.7);
+      box-shadow: inset 1px 1px 1px black,
+        1px 1px 1px black;
+    left: 0;
+    margin-top: 2px;
+    position: absolute;
+  }
+  
+  .menu__item {
+    margin: 30px;
+    text-align: left;
+  }
+  .menu__item:last-child {
+    margin-bottom: 30px;
+  }
+  .menu__item:hover {
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  /* Drop Down CSS End */
+  
+  /* Global CSS Start */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #222;
+    font-size: 100%;
+    color: white;
+    min-height: 1000px;
+  }
+  
+  html {
+    font-family: "Oswald", sans-serif;
+  }
+  
+  li {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  
+  /*  Global CSS END */
+  
+  
+  /* Grid Wrapper Areas START - Do not add additional CSS here */
+  .headshot {
+    grid-area: headshot;
+  }
+  
+  .heroimage {
+    grid-area: heroimage;
+  }
+  
+  .heroimage2 {
+    grid-area: heroimage2;
+  }
+  
+  .about__me {
+    grid-area: about__me;
+  }
+  
+  .projects {
+    grid-area: projects;
+  }
+  
+  .social {
+    grid-area: social;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  /* Grid Wrapper Areas END */
+  
+  
+  /* Body CSS START */
+  .grid__wrapper {
+    background-color: #101727;
+    color: #57bc90;
+  }
+  
+  .grid__wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-areas:
+      " heroimage heroimage heroimage "
+      " . . . "
+      ". headshot . "
+      " . . . "
+      " . projects . "
+      " . about__me . "
+      " heroimage2 heroimage2 heroimage2 "
+      ". social ."
+      " footer footer footer ";
+  }
+  
+  
+  .box {
+    color: #fff;
+    padding: 10px;
+    margin: 15px;
+  }
+  
+  .about__me {
+    text-align: center;
+  }
+  
+  .about__me__text,
+  .projects__description2 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    color: #a5a5af;
+    padding: 15px;
+  }
+  
+  .about__me__title, 
+  .projects__header {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 100%;
+  }
+  
+  .collapsible {
+    border-bottom: 1px solid #ff611d;  
+    padding: 5px;
+  }
+  
+  .collapsible:hover {
+    background-color: #171f32;
+  }
+  
+  
+  .footer {
+    background-color: rgba(23, 31, 50, 1);
+    background-image: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2027&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 1px 1px 1px black;
+    color: #fff;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  
+  
+  .photo__credit {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  
+  .heroimage {
+    background-image: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2027&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 1px 1px 1px black;
+    filter: blur(1px);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    z-index: 0;
+    height: 400px;
+    padding: 0px;
+  }
+  
+  .heroimage2 {
+    background-image: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2027&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 1px 1px 1px black;
+    filter: blur(1px);
+    z-index: 0;
+    height: 400px;
+    padding: 0px;
+  }
+  
+  .header__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .learn__more__btn {
+    background-color: #ff611d;
+    border-style: none;
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .learn__more__btn:hover {
+    background-color: #171f32;
+    font-weight: bold;
+  }
+  
+  /* Modal CSS Starts */
+  
+  .MainContainer {
+    width: 100%;
+    height: 1000px;
+  
+  }
+  
+  .is-blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+  
+  .learn__more__btn {
+    background-color: #ff611d;
+    border-style: none;
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .learn__more__btn:hover {
+    background-color: #171f32;
+    font-weight: bold;
+  }
+  
+  /* Overlay START */
+  
+  .Modal {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.5s;
+    transition: all 0.3s linear;
+  }
+  
+  .Modal-content {
+    background-color: rgba(16, 23, 39, 0.99);
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    height: 85%;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    overflow: scroll;
+  }
+  
+  .ModalOpen { overflow: hidden; }
+  
+  .is-hidden { display: none; }
+  
+  .is-visuallyHidden { opacity: 0; }
+  
+  /* Overlay END */
+  
+  /* Modal Close Button START */
+  
+  .Close {
+    color: white;
+    float: right;
+    font-size: 80px;
+    position: static;
+  }
+  
+  .Close:hover, .Close:focus {
+    color: #ff611d;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Modal Close Button END */
+  
+  /* Modal Content Styling START */
+  
+    article {
+      text-align: left;
+      margin: 15px;
+    }
+  
+  .contact__label {
+    margin-right: 15px;
+  }
+  .contact__link {
+    margin-left: 15px;
+  }
+  
+  .contact__link2 {
+    margin-left: 18px;
+  }
+  
+  .contact__link3 {
+    margin-left: 17px;
+  }
+    .contact__link:hover, 
+    .contact__link2:hover,
+    .contact__link3:hover{
+      text-shadow: 1px 1px 1px white;;
+    }
+  
+  .Modal li, ul {
+      text-align: left;
+      padding: 5px;
+    }
+  
+  .modal__header--1,
+    .modal__header--2,
+    .modal__header--3,
+  .collapsible{
+      font-size: 30px;
+      color: #ff611d;
+      margin: 10px;
+    }
+    
+    .modal__img {
+      height: auto;
+      width: 100%;
+      max-width: 40rem;
+      max-height: 40rem;
+      min-width: 10rem;
+      min-height: 10rem;
+      border-radius: 1rem;
+      margin: 2rem;
+    }
+    
+    .modal__text {
+      font-size: 20px;
+      text-align: center;
+      color: #a5a5af;    
+    }
+    
+    .modal__title {
+      font-size: 38px;
+      text-align: center;
+      color: white;
+    
+   
+  }
+  
+  /* Modal Content Styling END */
+  
+  /* Modal CSS END */
+  
+  /* Collapsible CSS START */
+  
+  
+  .content {
+    display: none;
+    overflow: hidden;
+  }
+  
+  
+  /* Collapsible CSS END */
+  
+  
+  .logos {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    width: 200px;
+  }
+  
+  .logos__item--1,
+  .logos__item--3 {
+    height: 65.99;
+    width: 65.99px;
+    padding: 0.4rem;
+    margin: 0.5rem;
+    background-color: #ff611d;
+    border-radius: 360px;
+    box-shadow: 1px 1px 1px black;
+  }
+  
+  .logos__item--2 {
+    height: 65.99;
+    width: 65.99px;
+    padding: 0.4rem;
+    margin: 0.5rem;
+    background-color: #ff611d;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+  }
+  
+  .logos__item--2 img {
+    border-radius: 5px;
+  }
+  .logos__item--1:hover,
+  .logos__item--2:hover,
+  .logos__item--3:hover {
+    background-color: #171f32;
+  }
+  
+  .headshot {
+    align-items: center;
+    border-radius: 360px;
+    background-color: transparent;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .headshot_img {
+    border-radius: 360px;
+    height: 260px;
+    width: 260px;
+  }
+  
+  .social img {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+    width: 50px;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 360px;
+    align-self: center;
+    justify-self: center;
+    padding: 0px;
+    margin: -3px;
+  }
+  .social ul {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .grid__wrapper {
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        " . "
+        " about__me "
+        " projects "
+        " . "
+        " social "
+        " footer ";
+    }
+    .footer {
+      background-color: rgba(23, 31, 50, 1);
+      background-image: none;
+    }
+  
+    header {
+      background-color: rgba(255, 97, 29, 1);
+    }
+  
+    .menu__items {
+      background-color: rgba(255, 97, 29, 1);
+      align-items: center;
+      width: 100%;
+      box-shadow: 1px 1px black;
+      left: 0;
+      margin-top: 2px;
+      position: absolute;
+    }
+  
+    .menu__item {
+      margin: 30px;
+      text-align: center;
+    }
+    .menu__item:last-child {
+      margin-bottom: 15px;
+    }
+  
+    .photo__credit {
+      display: none;
+    }
+  }
+  
+  /* Carousel CSS START */
+  
+  .wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    background-color: transparent;
+    left: -100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: translateX(100%);
+  }
+  
+  @media (min-width: 30em) {
+    .carousel {
+      left: -50%;
+      transform: translateX(50%);
+    }
+  }
+  
+  @media (min-width: 40em) {
+    .carousel {
+      left: -33.33333%;
+      transform: translateX(33.33333%);
+    }
+  }
+  
+  .carousel.is-reversing {
+    transform: translateX(-100%);
+  }
+  
+  @media (min-width: 30em) {
+    .carousel.is-reversing {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (min-width: 40em) {
+    .carousel.is-reversing {
+      transform: translateX(-33.33333%);
+    }
+  }
+  
+  .carousel.is-set {
+    transform: none;
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  
+  .carousel-seat {
+    padding: 2px;
+    background: transparent;
+    flex: 1 0 100%;
+    order: 2;
+  }
+  
+  .carousel-seat:nth-child(even) {
+    background: transparent;
+  }
+  
+  @media (min-width: 30em) {
+    .carousel-seat {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media (min-width: 40em) {
+    .carousel-seat {
+      flex-basis: 33.33333%;
+    }
+  }
+  
+  .carousel-seat.is-ref {
+    order: 1;
+  }
+  
+  
+  
+  .controls {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .controls button {
+    background: rgba(255, 97, 29, 1);
+    border: 0;
+  
+    color: #eee;
+    padding: 0.5em 1em;
+  }
+  
+  .controls button:hover {
+    background: #171f32;
+  }
+  
+  .carousel__img {
+    height: auto;
+    width: 100%;
+  }
+  
+  .carousel__frame {
+    color: transparent;
+    background-color: transparent;
+    font-size: 100%;
+    padding: 2px;
+    font-weight: normal;
+    text-align: center;
+  }
