@@ -527,7 +527,9 @@ header {
       grid-template-columns: 1fr;
       grid-template-areas:
         " . "
-        " about__me "
+        " . "
+        " headshot "
+        " . "      
         " projects "
         " . "
         " social "
