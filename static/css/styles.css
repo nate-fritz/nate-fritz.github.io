@@ -545,6 +545,10 @@ header {
       background-color: rgba(255, 97, 29, 1);
     }
   
+    .heroimage {
+      height: 200px;
+    }
+      
     .menu__items {
       background-color: rgba(255, 97, 29, 1);
       align-items: center;
